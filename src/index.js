@@ -12,8 +12,7 @@
  *   OPTIONS *                    – CORS preflight (required by spec)
  */
 
-import express from 'express';
-import { Transaction, VersionedTransaction } from '@solana/web3.js';
+const express = require('express');
 
 const app = express();
 app.use(express.json());
