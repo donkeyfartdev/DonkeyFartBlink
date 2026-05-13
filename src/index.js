@@ -55,15 +55,15 @@ app.get('/', (req, res) => {
 </head>
 <body>
   <div class="card">
+  <div class="bg-logo"></div>
+  <div class="content">
     <h1>$DONKEYFART</h1>
-    <p>Swap SOL for $DONKEYFART via Jupiter.<br>Choose your amount:</p>
-   <a class="btn" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">0.1 SOL</a>
-<a class="btn" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">0.25 SOL</a>
-<a class="btn" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">0.5 SOL</a>
-<a class="btn" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">1 SOL</a>
-
+    <p>Swap SOL for $DONKEYFART via Jupiter</p>
+    <a class="buy-btn" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">⚡ BUY NOW</a>
     <div class="ca">CA: 2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2</div>
   </div>
+</div>
+
 </body>
 </html>`);
 });
