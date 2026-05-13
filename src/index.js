@@ -30,6 +30,51 @@ app.get('/', (req, res) => {
   <a href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">Buy on Jupiter</a>
   </body></html>`);
 });
+const path = require('path');
+
+app.get('/preview.png', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'preview.png'));
+});
+
+app.get('/', (req, res) => {
+  res.setHeader('Content-Type', 'text/html');
+  res.send(`<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Buy $DONKEYFART</title>
+  <meta property="og:title" content="Buy $DONKEYFART on Solana" />
+  <meta property="og:description" content="Swap SOL for $DONKEYFART instantly via Jupiter. Choose 0.1, 0.25, 0.5 or 1 SOL." />
+  <meta property="og:image" content="https://donkeyfartblink.up.railway.app/preview.png" />
+  <meta property="og:url" content="https://donkeyfartblink.up.railway.app" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Buy $DONKEYFART on Solana" />
+  <meta name="twitter:description" content="Swap SOL for $DONKEYFART instantly via Jupiter. Choose 0.1, 0.25, 0.5 or 1 SOL." />
+  <meta name="twitter:image" content="https://donkeyfartblink.up.railway.app/preview.png" />
+  <style>
+    body{background:#0a0a0a;color:#fff;font-family:monospace;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}
+    .card{max-width:400px;width:90%;background:#111;border:1px solid #222;border-radius:16px;padding:32px;text-align:center}
+    h1{background:linear-gradient(90deg,#00ffa3,#9945ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:2.5rem;margin:0 0 8px}
+    p{color:#888;font-size:13px;line-height:1.6;margin:0 0 24px}
+    .btn{display:block;width:100%;padding:14px;margin:10px 0;background:linear-gradient(135deg,#00ffa3,#9945ff);border:none;border-radius:10px;color:#000;font-weight:700;font-size:14px;text-decoration:none;box-sizing:border-box}
+    .ca{font-size:10px;color:#444;word-break:break-all;margin-top:20px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>$DONKEYFART</h1>
+    <p>Swap SOL for $DONKEYFART via Jupiter.<br>Choose your amount:</p>
+    <a class="btn" href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2?inAmount=100000000">0.1 SOL</a>
+    <a class="btn" href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2?inAmount=250000000">0.25 SOL</a>
+    <a class="btn" href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2?inAmount=500000000">0.5 SOL</a>
+    <a class="btn" href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2?inAmount=1000000000">1 SOL</a>
+    <div class="ca">CA: 2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2</div>
+  </div>
+</body>
+</html>`);
+});
 
 app.get('/actions.json', (req, res) => {
   cors(res);
