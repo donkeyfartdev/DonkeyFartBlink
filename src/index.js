@@ -45,12 +45,15 @@ app.get('/', (req, res) => {
   <meta name="twitter:description" content="Swap SOL for $DONKEYFART instantly via Jupiter. Choose 0.1, 0.25, 0.5 or 1 SOL." />
   <meta name="twitter:image" content="https://donkeyfartblink.up.railway.app/preview.png" />
   <style>
-    body{background:#0a0a0a;color:#fff;font-family:monospace;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}
-    .card{max-width:400px;width:90%;background:#111;border:1px solid #222;border-radius:16px;padding:32px;text-align:center}
-    h1{background:linear-gradient(90deg,#00ffa3,#9945ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:2.5rem;margin:0 0 8px}
-    p{color:#888;font-size:13px;line-height:1.6;margin:0 0 24px}
-    .btn{display:block;width:100%;padding:14px;margin:10px 0;background:linear-gradient(135deg,#00ffa3,#9945ff);border:none;border-radius:10px;color:#000;font-weight:700;font-size:14px;text-decoration:none;box-sizing:border-box}
-    .ca{font-size:10px;color:#444;word-break:break-all;margin-top:20px}
+    body{background:#000;color:#fff;font-family:monospace;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;overflow:hidden}
+.card{position:relative;max-width:480px;width:90%;background:#0a0a0a;border:1px solid #1a3d1a;border-radius:20px;padding:60px 40px;text-align:center;overflow:hidden;box-shadow:0 0 60px rgba(0,255,100,0.15)}
+.bg-logo{position:absolute;inset:0;background-image:url('/preview.png');background-size:cover;background-position:center;opacity:0.18;filter:blur(2px);z-index:0}
+.content{position:relative;z-index:1}
+h1{font-size:3rem;margin:0 0 12px;background:linear-gradient(90deg,#00ff64,#00ffa3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px;text-shadow:0 0 30px rgba(0,255,100,0.5)}
+p{color:#aaa;font-size:14px;margin:0 0 32px;letter-spacing:1px}
+.buy-btn{display:block;width:100%;padding:22px;background:linear-gradient(135deg,#00ff64,#00ffa3);border:none;border-radius:14px;color:#000;font-weight:900;font-size:20px;letter-spacing:3px;text-decoration:none;box-sizing:border-box;box-shadow:0 0 40px rgba(0,255,100,0.4);transition:transform 0.2s}
+.buy-btn:hover{transform:translateY(-2px);box-shadow:0 8px 50px rgba(0,255,100,0.6)}
+.ca{font-size:10px;color:#444;word-break:break-all;margin-top:24px;letter-spacing:0.5px}
   </style>
 </head>
 <body>
