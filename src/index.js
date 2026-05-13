@@ -20,16 +20,7 @@ function cors(res) {
 
 app.options('*', (req, res) => { cors(res); res.sendStatus(200); });
 
-app.get('/', (req, res) => {
-  res.setHeader('Content-Type', 'text/html');
-  res.send(`<html><head>
-  <link rel="solana:action" href="/api/buy-dfart" />
-  <meta name="dscvr:actions:version" content="vspec:actions:v1" />
-  </head><body>
-  <h1>Buy $DFART</h1>
-  <a href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">Buy on Jupiter</a>
-  </body></html>`);
-});
+
 const path = require('path');
 
 app.get('/preview.png', (req, res) => {
