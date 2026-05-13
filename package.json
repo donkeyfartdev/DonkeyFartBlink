@@ -1,16 +1,12 @@
-
+{
   "name": "dfart-blink",
-  "version": "1.0.0",
-  "description": "Solana Actions / Blink server for buying $DFART via Jupiter",
+  "version": "2.0.0",
+  "description": "Solana Blink for buying DFART via Jupiter",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js"
+    "start": "node src/index.js"
   },
   "dependencies": {
     "express": "^4.19.2"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
