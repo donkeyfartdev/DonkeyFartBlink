@@ -57,10 +57,11 @@ app.get('/', (req, res) => {
   <div class="card">
     <h1>$DONKEYFART</h1>
     <p>Swap SOL for $DONKEYFART via Jupiter.<br>Choose your amount:</p>
-    <a class="btn" href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2?inAmount=100000000">0.1 SOL</a>
-    <a class="btn" href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2?inAmount=250000000">0.25 SOL</a>
-    <a class="btn" href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2?inAmount=500000000">0.5 SOL</a>
-    <a class="btn" href="https://jup.ag/swap/SOL-2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2?inAmount=1000000000">1 SOL</a>
+   <a class="btn" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">0.1 SOL</a>
+<a class="btn" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">0.25 SOL</a>
+<a class="btn" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">0.5 SOL</a>
+<a class="btn" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2">1 SOL</a>
+
     <div class="ca">CA: 2wQtLSrEwhFWc3y7UWGbtc5qoFeEGcikmBbxvEguHNB2</div>
   </div>
 </body>
