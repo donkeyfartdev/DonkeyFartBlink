@@ -27,7 +27,9 @@ app.get('/actions.json', (req, res) => {
 
 app.get('/api/buy-dfart', (req, res) => {
   cors(res);
-  const base = `${req.protocol}://${req.get('host')}`;
+  const proto = req.get('x-forwarded-proto') || req.protocol;
+const base = `${proto}://${req.get('host')}`;
+
   res.json({
     type: 'action',
     icon: ICON_URL,
